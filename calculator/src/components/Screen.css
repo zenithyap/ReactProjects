@@ -1,0 +1,7 @@
+.screen {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+    background-image: linear-gradient(315deg, grey, white);
+    border-radius: 10px;
+}

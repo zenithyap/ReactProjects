@@ -1,0 +1,56 @@
+.equals {
+    margin-bottom: 9px;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    grid-column: 3 / 5;
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+}
+
+.equals-front {
+    display: block;
+    padding: 12px 40px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+}
+
+.pushable {
+    margin-bottom: 9px;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+}
+
+.front {
+    display: block;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+}
+
+.pushable:active .front {
+    transform: translateY(-4px);
+}
+
+.equals:active .equals-front {
+    transform: translateY(-4px);
+}
