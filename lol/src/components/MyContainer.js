@@ -3,6 +3,13 @@ import { useState } from 'react';
 import ToDoList from './ToDoList'
 
 export default function MyContainer({children}) {
+  const [checked, setChecked] = useState(
+    {
+      0: true,
+      1: false,
+      2: false
+    }
+  )
 
   const todos = [
     "Setup development environment",
@@ -10,5 +17,5 @@ export default function MyContainer({children}) {
     "Deploy to live server"
   ]
 
-  return ToDoList(todos)
+  return ToDoList(todos, checked)
 }

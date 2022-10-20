@@ -1,5 +1,5 @@
-export default function ToDoItem(props, i) {
+export default function ToDoItem(props, i, check) {
   return <li key={i}>
-      <input type='checkbox'/> {props}
+      <input type='checkbox' checked={check[i]} /> {props}
     </li>
 }
