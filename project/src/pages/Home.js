@@ -7,7 +7,6 @@ export default function home() {
         <div className='bg'>
             <NavigationBar/>
             <div className='title'>Welcome</div>
-            <div className='title'>Home</div>
         </div>
     )
 }

@@ -4,9 +4,10 @@ body, html {
 
 .bg {
     background-image: url('https://images.hdqwalls.com/download/8-bit-sunrise-mountains-artwork-4k-fg-2560x1440.jpg');
-    height: 100vh;
+    min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 
