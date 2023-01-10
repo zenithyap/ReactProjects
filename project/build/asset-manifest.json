@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.c47eb70f.css",
-    "main.js": "/static/js/main.b61aa10d.js",
+    "main.css": "/static/css/main.61a779db.css",
+    "main.js": "/static/js/main.c59a2ff3.js",
     "static/js/787.ec704a7a.chunk.js": "/static/js/787.ec704a7a.chunk.js",
+    "static/media/pexels-jessica-lewis-creative-1010519.jpg": "/static/media/pexels-jessica-lewis-creative-1010519.0ea6545fb6643203fac0.jpg",
+    "static/media/video-game-controller-top.jpg": "/static/media/video-game-controller-top.c121b546857bcc25ce33.jpg",
     "index.html": "/index.html",
-    "main.c47eb70f.css.map": "/static/css/main.c47eb70f.css.map",
-    "main.b61aa10d.js.map": "/static/js/main.b61aa10d.js.map",
+    "main.61a779db.css.map": "/static/css/main.61a779db.css.map",
+    "main.c59a2ff3.js.map": "/static/js/main.c59a2ff3.js.map",
     "787.ec704a7a.chunk.js.map": "/static/js/787.ec704a7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c47eb70f.css",
-    "static/js/main.b61aa10d.js"
+    "static/css/main.61a779db.css",
+    "static/js/main.c59a2ff3.js"
   ]
 }
