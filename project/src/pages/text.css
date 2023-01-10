@@ -5,3 +5,9 @@
   color: rgb(194, 194, 194);
   font-family: "Lucida Handwriting", "Brush Script MT", cursive;
 }
+
+h1 {
+  text-align: center;
+  top: 20px;
+}
+
