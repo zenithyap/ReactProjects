@@ -9,6 +9,24 @@ body, html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    margin-bottom: 30%;
+}
+
+.bg2 {
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+.guitar {
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+    background-image: url('images/pexels-jessica-lewis-creative-1010519.jpg');
+}
+
+.gaming {
+    background-image: url('images/video-game-controller-top.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
 }
 
