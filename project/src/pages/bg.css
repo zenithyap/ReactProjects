@@ -6,7 +6,6 @@ body, html {
     background-image: url('https://images.hdqwalls.com/download/8-bit-sunrise-mountains-artwork-4k-fg-2560x1440.jpg');
     min-height: 100vh;
     background-position: center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -16,7 +15,6 @@ body, html {
     background-position: center;
     background-size:cover;
     background-attachment: fixed;
-    background-repeat: no-repeat;
     min-height: 100vh;
 }
 

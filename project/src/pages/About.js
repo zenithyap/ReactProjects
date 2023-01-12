@@ -21,42 +21,45 @@ export default function About() {
         <NavigationBar />
         <div className='title'>About Me</div>
         <div className='h_line'/>
-        <Container sx={{marginTop: '3%'}} maxWidth="sm" >
+        <Container sx={{marginTop: '3%', marginBottom:'12%'}} maxWidth="sm" >
           <p>
             I am a Year 2 CS student in NUS. Being exceptional at the art of procrastination and slacking, I will (hopefully) finish whatever this is before I gradute. I have nothing else to say but i need this sentence to be longer to look nicer, so I am just typing gibberish. “The whole secret lies in confusing the enemy, so that he cannot fathom our real intent.” “If he sends reinforcements everywhere, he will everywhere be weak.” “The supreme art of war is to subdue the enemy without fighting.” “Bravery without forethought, causes a man to fight blindly and desperately like a mad bull.
           </p>
         </Container>
-        <Container sx = {{marginTop:'10%', marginBottom:'1%', textAlign:'center'}}>
+        <Container sx = {{textAlign:'center'}}>
           <h1>
             My Interest
           </h1>
-          <ArrowCircleDownIcon style={{color:'whitesmoke', display:'flex', margin:'auto', justifyContent:'center'}}/>
-        </Container>
-        <ul style={{textAlign:'center'}}>
+          <ArrowCircleDownIcon style={{color:'whitesmoke'}}/>
+          <ul style={{listStyle:'none'}}>
           <li>
             <SportsEsportsIcon onClick={() => window.open('https://www.google.com', '_blank')}
                               sx={{ "&:hover": { color: "grey" }, 
                                     fontSize:'1300%', 
                                     color:'whitesmoke', 
-                                    padding:2}}/>
+                                    padding:2,
+                                    marginRight:4}}/>
           </li>
           <li>
             <MusicNoteIcon onClick={() => window.open('https://www.google.com', '_blank')}
                               sx={{ "&:hover": { color: "grey" }, 
                                     fontSize:'1300%', 
                                     color:'whitesmoke', 
-                                    padding:2}}/>
+                                    padding:2,
+                                    marginRight:4}}/>
           </li>
           <li>
             <RocketIcon onClick={() => window.open('https://www.google.com', '_blank')}
                               sx={{ "&:hover": { color: "grey" }, 
                                     fontSize:'1300%', 
                                     color:'whitesmoke', 
-                                    padding:2}}/>
+                                    padding:2,
+                                    marginRight:4}}/>
           </li>
         </ul>
+        </Container>
+
       </div>
     </div>
-
   )
 }
