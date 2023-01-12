@@ -2,6 +2,12 @@ body, html {
     height: 100%;
 }
 
+.material-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .bg {
     background-image: url('https://images.hdqwalls.com/download/8-bit-sunrise-mountains-artwork-4k-fg-2560x1440.jpg');
     min-height: 100vh;

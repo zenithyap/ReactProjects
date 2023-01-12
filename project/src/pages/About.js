@@ -1,6 +1,6 @@
 import './text.css'
 import NavigationBar from './NavigationBar';
-import { Container } from '@mui/material';
+import { Container, Box } from '@mui/material';
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
@@ -26,12 +26,17 @@ export default function About() {
             I am a Year 2 CS student in NUS. Being exceptional at the art of procrastination and slacking, I will (hopefully) finish whatever this is before I gradute. I have nothing else to say but i need this sentence to be longer to look nicer, so I am just typing gibberish. “The whole secret lies in confusing the enemy, so that he cannot fathom our real intent.” “If he sends reinforcements everywhere, he will everywhere be weak.” “The supreme art of war is to subdue the enemy without fighting.” “Bravery without forethought, causes a man to fight blindly and desperately like a mad bull.
           </p>
         </Container>
-        <Container sx = {{textAlign:'center'}}>
+        <Box position='absolute' bottom='20px' left='42%'>
           <h1>
-            My Interest
+            My Interests
           </h1>
-          <ArrowCircleDownIcon style={{color:'whitesmoke'}}/>
-          <ul style={{listStyle:'none'}}>
+          <Box display='flex' justifyContent='center'>
+            <ArrowCircleDownIcon style={{color:'whitesmoke'}}/>
+          </Box>
+        </Box>
+        <div className='bg'>
+        <Box position='absolute' top='100%' left='42%'>
+        <ul style={{listStyle:'none', textAlign:'center'}}>
           <li>
             <SportsEsportsIcon onClick={() => window.open('https://www.google.com', '_blank')}
                               sx={{ "&:hover": { color: "grey" }, 
@@ -57,9 +62,11 @@ export default function About() {
                                     marginRight:4}}/>
           </li>
         </ul>
-        </Container>
+        </Box>
+        </div>
 
+
+        </div>
       </div>
-    </div>
   )
 }
