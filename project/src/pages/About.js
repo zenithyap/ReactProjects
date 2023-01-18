@@ -34,7 +34,7 @@ export default function About() {
       <div className='h_line'/>
       <Container sx={{marginTop: '3%', marginBottom:'12%'}} maxWidth="md" >
         <div className='p1'>
-          I am a Year 2 CS student in NUS. Being exceptional at the art of procrastination and slacking, I will (hopefully) finish whatever this is before I gradute. I have nothing else to say but i need this sentence to be longer to look nicer. “The whole secret lies in confusing the enemy, so that he cannot fathom our real intent.” “If he sends reinforcements everywhere, he will everywhere be weak.” “The supreme art of war is to subdue the enemy without fighting.” “Bravery without forethought, causes a man to fight blindly and desperately like a mad bull.
+          I am a Year 2 CS student in NUS. Being exceptional at the art of procrastination, I will (hopefully) finish whatever this is before I gradute. I have nothing else to say but i need this sentence to be longer to look nicer. “The whole secret lies in confusing the enemy, so that he cannot fathom our real intent.” “If he sends reinforcements everywhere, he will everywhere be weak.” “The supreme art of war is to subdue the enemy without fighting.” “Bravery without forethought, causes a man to fight blindly and desperately like a mad bull.
         </div>
         <Grid container spacing='5' marginTop={6}>
           <Grid item xs={6}>
