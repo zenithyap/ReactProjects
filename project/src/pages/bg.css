@@ -45,3 +45,7 @@ body, html {
     min-height: 50vh;
 }
 
+.myCard {
+    background-color: aliceblue;
+    text-align: center;
+}

@@ -1,6 +1,9 @@
 import './text.css'
 import NavigationBar from './NavigationBar';
-import { Container, Box } from '@mui/material';
+import Timeline from './Timeline'
+import { Container, Box, Grid } from '@mui/material';
+import Paper from '@mui/material/Paper';
+import { styled } from '@mui/material/styles';
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
@@ -14,28 +17,51 @@ import RocketIcon from '@mui/icons-material/Rocket';
 </Container>
 */
 
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
+
 export default function About() {
   return (
-    <div>
-      <div className='bg'>
-        <NavigationBar />
-        <div className='title'>About Me</div>
-        <div className='h_line'/>
-        <Container sx={{marginTop: '3%', marginBottom:'12%'}} maxWidth="sm" >
-          <p>
-            I am a Year 2 CS student in NUS. Being exceptional at the art of procrastination and slacking, I will (hopefully) finish whatever this is before I gradute. I have nothing else to say but i need this sentence to be longer to look nicer, so I am just typing gibberish. “The whole secret lies in confusing the enemy, so that he cannot fathom our real intent.” “If he sends reinforcements everywhere, he will everywhere be weak.” “The supreme art of war is to subdue the enemy without fighting.” “Bravery without forethought, causes a man to fight blindly and desperately like a mad bull.
-          </p>
-        </Container>
-        <Box position='absolute' bottom='20px' left='42%'>
-          <h1>
-            My Interests
-          </h1>
-          <Box display='flex' justifyContent='center'>
-            <ArrowCircleDownIcon style={{color:'whitesmoke'}}/>
-          </Box>
-        </Box>
-        <div className='bg'>
-        <Box position='absolute' top='100%' left='42%'>
+    <div className='bg'>
+      <NavigationBar />
+      <div className='title'>About Me</div>
+      <div className='h_line'/>
+      <Container sx={{marginTop: '3%', marginBottom:'12%'}} maxWidth="md" >
+        <div className='p1'>
+          I am a Year 2 CS student in NUS. Being exceptional at the art of procrastination and slacking, I will (hopefully) finish whatever this is before I gradute. I have nothing else to say but i need this sentence to be longer to look nicer. “The whole secret lies in confusing the enemy, so that he cannot fathom our real intent.” “If he sends reinforcements everywhere, he will everywhere be weak.” “The supreme art of war is to subdue the enemy without fighting.” “Bravery without forethought, causes a man to fight blindly and desperately like a mad bull.
+        </div>
+        <Grid container spacing='5' marginTop={6}>
+          <Grid item xs={6}>
+            <Item>
+              <h3>Education</h3>
+              <div className='h_line'/>
+              <Timeline/>
+            </Item>
+            
+          </Grid>
+          <Grid item xs={6}>
+            <Item>Skills</Item>
+          </Grid>
+          <Grid item xs={6}>
+            <Item>Contact</Item>
+          </Grid>
+          <Grid item xs={6}>
+            <Item>Interest</Item>
+          </Grid>
+        </Grid>
+      </Container>
+      <h1 position='absolute'>
+          My Interests
+      </h1>
+      <Box display='flex' justifyContent='center'>
+        <ArrowCircleDownIcon style={{color:'whitesmoke'}}/>
+      </Box>
+      <Box position='flex' alignItems='center'>
         <ul style={{listStyle:'none', textAlign:'center'}}>
           <li>
             <SportsEsportsIcon onClick={() => window.open('https://www.google.com', '_blank')}
@@ -62,11 +88,7 @@ export default function About() {
                                     marginRight:4}}/>
           </li>
         </ul>
-        </Box>
-        </div>
-
-
-        </div>
-      </div>
+      </Box>
+    </div>
   )
 }
