@@ -1,6 +1,7 @@
 import './text.css'
 import NavigationBar from './NavigationBar';
-import Timeline from './Timeline'
+import Timeline from './EducationTimeline'
+import Skills from './Skills'
 import { Container, Box, Grid } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
@@ -45,13 +46,11 @@ export default function About() {
             
           </Grid>
           <Grid item xs={6}>
-            <Item>Skills</Item>
-          </Grid>
-          <Grid item xs={6}>
-            <Item>Contact</Item>
-          </Grid>
-          <Grid item xs={6}>
-            <Item>Interest</Item>
+            <Item>
+              <h3>Skills</h3>
+              <div className='h_line'/>
+              <Skills/>
+            </Item>
           </Grid>
         </Grid>
       </Container>
@@ -64,25 +63,25 @@ export default function About() {
       <Box position='flex' alignItems='center'>
         <ul style={{listStyle:'none', textAlign:'center'}}>
           <li>
-            <SportsEsportsIcon onClick={() => window.open('https://www.google.com', '_blank')}
+            <SportsEsportsIcon onClick={() => window.open('https://steamcommunity.com/profiles/76561198262957792/', '_blank')}
                               sx={{ "&:hover": { color: "grey" }, 
-                                    fontSize:'1300%', 
+                                    fontSize:'1200%', 
                                     color:'whitesmoke', 
                                     padding:2,
                                     marginRight:4}}/>
           </li>
           <li>
-            <MusicNoteIcon onClick={() => window.open('https://www.google.com', '_blank')}
+            <MusicNoteIcon onClick={() => window.open('https://www.songsterr.com/', '_blank')}
                               sx={{ "&:hover": { color: "grey" }, 
-                                    fontSize:'1300%', 
+                                    fontSize:'1200%', 
                                     color:'whitesmoke', 
                                     padding:2,
                                     marginRight:4}}/>
           </li>
           <li>
-            <RocketIcon onClick={() => window.open('https://www.google.com', '_blank')}
+            <RocketIcon onClick={() => window.open('https://www.nasa.gov/', '_blank')}
                               sx={{ "&:hover": { color: "grey" }, 
-                                    fontSize:'1300%', 
+                                    fontSize:'1200%', 
                                     color:'whitesmoke', 
                                     padding:2,
                                     marginRight:4}}/>
