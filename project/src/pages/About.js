@@ -34,7 +34,7 @@ export default function About() {
       <div className='h_line'/>
       <Container sx={{marginTop: '3%', marginBottom:'12%'}} maxWidth="md" >
         <div className='p1'>
-          I am a Year 2 CS student in NUS. Being exceptional at the art of procrastination, I will (hopefully) finish whatever this is before I gradute. I have nothing else to say but i need this sentence to be longer to look nicer. “The whole secret lies in confusing the enemy, so that he cannot fathom our real intent.” “If he sends reinforcements everywhere, he will everywhere be weak.” “The supreme art of war is to subdue the enemy without fighting.” “Bravery without forethought, causes a man to fight blindly and desperately like a mad bull.
+          I am a Year 2 Computer Science Major currently studying in National University of Singapore. I am a self-motivated, responsible and hard working individual, open to learning new frameworks and languages in order to further develop my personal skills for a job in the future. I aspire to be a Software Developer / Frontend web developer as these 2 years in University made me realise that designing a nice GUI is very accomplishing. With that said, I hope to land an internship soon so as to gain the necessary industry related skills in order to further my career in the software developer field.  
         </div>
         <Grid container spacing='5' marginTop={6}>
           <Grid item xs={6}>
